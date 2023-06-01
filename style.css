@@ -1,0 +1,60 @@
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;  
+}
+
+
+
+navbar h1 {
+    background-color: darkblue;
+    color: white;
+    padding: 5px;
+    margin: 0px;
+    display: block;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+}
+
+aside h2 {
+    color: black;
+}
+
+aside input {
+    border-style:solid;
+    border-color: black;
+    border-radius:2%;
+}
+
+aside button {
+    background-color: blue;
+    color: white;
+    display: inline;
+    margin: 5px;
+}
+
+.current-day-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-color: black;
+}
+
+.five-day-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.five-day {
+    display: flex;
+    flex-direction: row;
+}
+
+.five-day li {
+    background-color: navy;
+    color: white;
+}
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>5 Day Weather Forecast</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+<body>
+    <navbar>
+        <h1> Weather Dashboard </h1>
+    </navbar>
+
+    <aside>
+        <h2> Search for a city: </h2>
+        <input id="search-input"/>
+        <button id="search-btn"> Search </button>
+        <h3 id="cities-displayed"> Previous cities searched: </h3>
+    </aside>
+
+    
+    <div class="current-day-container">
+        <h3> Today </h3>
+        <div id="city"></div>
+        <div id="now"></div>
+        <div id="temp-now"></div>
+        <div id="wind-now"></div>
+        <div id="humidity-now"></div>
+    </div>
+
+    <section class="five-day-container">
+        <h3> 5-Day Forecast </h3>
+        <div class="five-day">
+            <ul id="day-one">
+                <li id="day-one-date"> Day 1 </li>
+                <li id="day-one-icon"></li>
+                <li id="day-one-temp"> temp </li>
+                <li id="day-one-wind"> wind </li>
+                <li id="day-one-humidity"> humidity </li>
+            </ul>
+            <ul id="day-two">
+                <li id="day-two-date"> Day 2 </li>
+                <li id="day-two-icon"></li>
+                <li id="day-two-temp"> temp </li>
+                <li id="day-two-wind"> wind </li>
+                <li id="day-two-humidity"> humidity </li>
+            </ul>
+            <ul id="day-three">
+                <li id="day-three-date"> Day 3 </li>
+                <li id="day-three-icon"></li>
+                <li id="day-three-temp"> temp </li>
+                <li id="day-three-wind"> wind </li>
+                <li id="day-three-humidity"> humidity </li>
+            </ul>
+            <ul id="day-four">
+                <li id="day-four-date"> Day 4 </li>
+                <li id="day-four-icon"></li>
+                <li id="day-four-temp"> temp </li>
+                <li id="day-four-wind"> wind </li>
+                <li id="day-four-humidity"> humidity </li>
+            </ul>
+            <ul id="day-five">
+                <li id="day-five-date"> Day 5 </li>
+                <li id="day-five-icon"></li>
+                <li id="day-five-temp"> temp </li>
+                <li id="day-five-wind"> wind </li>
+                <li id="day-five-humidity"> humidity </li>
+            </ul>
+        </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+</body>
